@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lam Ying Tung +Cheung Ka Man">
+        <meta name="description" content="Group Chan Tin Wai-Tsang kin yat-Cheung Ka Man-Lam Ying Tung">
+        <title>即將上映</title>
+        <link rel="stylesheet" href="style/coming-soon.css">
+<!-- Yoi code 1of3 begin -->
+        <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/footer.css">
+<!-- Yoi code 1of3 end -->
+    </head>
+<body>
+<!-- Yoi code 2of3 begin -->
+<div id="nav-placeholder"></div>
+<!-- Yoi code 2of3 end -->
+
+<div class="main">
+  <div class="movie-card">
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/01-halftime.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">6.4 / 10</h2>
+          <h3 class="genre">Documentary</h3>
+          <h3 class="genre">Music</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/02-buzz.jpg" alt="">
+        
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">6.6 / 10</h2>
+          <h3 class="genre">Documentary</h3>
+          <h3 class="genre">Animation</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/03-snipers.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">6.5 / 10</h2>
+          <h3 class="genre">Action</h3>
+          <h3 class="genre">Drama</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+  
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/04-hero.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">7.1 / 10</h2>
+          <h3 class="genre">Comedy</h3>
+          <h3 class="genre">Drama</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/05-leonora.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">7.4 / 10</h2>
+          <h3 class="genre">Comedy</h3>
+          <h3 class="genre">Drama</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/06-nice.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">6.7 / 10</h2>
+          <h3 class="genre">Comedy</h3>
+          <h3 class="genre">Drama</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/07-zeko.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">6.5 / 10</h2>
+          <h3 class="genre">Action</h3>
+          <h3 class="genre">Comedy</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+
+    <a href="" class="movie-card-link">
+      <figure>
+        <img class="cover-img" src="img/08-prime.jpg" alt="">
+        <figcaption>
+          <span class="star">
+            <img src="img/star.png">
+          </span>
+          <h2 class="rating">6.6 / 10</h2>
+          <h3 class="genre">Action</h3>
+          <h3 class="genre">Drama</h3>
+          <span class="btn-view-details">View Details</span>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+
+
+<!-- Yoi code 3of3 begin -->
+<div id="footer"></div>
+<!-- Yoi code 3of3 end -->
+<script src="style/java.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+   $.get("navbar.html", function(data){
+       $("#nav-placeholder").replaceWith(data);
+   });
+
+   $.get("footer.html", function(data){
+       $("#footer").replaceWith(data);
+   });
+</script>
+</body>
+</html>

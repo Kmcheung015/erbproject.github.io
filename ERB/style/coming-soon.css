@@ -1,0 +1,82 @@
+.main {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  position: relative;
+  width: 50%;
+  margin-bottom: 70px;
+  
+
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  transition: all 300ms ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+.movie-card-link {
+  max-width: 220px;
+  display: inline-block;
+  border: 5px solid #fff;
+  border-radius: 4px;
+}
+
+.movie-card-link:hover {
+  border-color: rgb(128, 0, 0);
+}
+
+.cover-img {
+  width: 100%;
+  height: auto;
+}
+
+.star {
+  padding-left: 45%;
+  padding-top: 30%;
+}
+
+.rating {
+  text-align: center;
+  color: #fff;
+}
+
+.genre {
+  text-align: center;
+  color: #fff;
+}
+
+.btn-view-details {
+  position: absolute;
+  border: 1px solid #6ac045;
+  background: #6ac045;
+  padding: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 20%;
+}

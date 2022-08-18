@@ -1,0 +1,24 @@
+/* footer CSS */
+*{
+  margin:0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
+
+  }
+
+
+  .footer-text{
+    color: #FFF;
+    padding-right: 10px;
+  }
+
+  .footer a{
+    color: #FFF;
+    text-decoration: none;
+
+  }

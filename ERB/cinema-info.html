@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cheung Ka Man">
+    <meta name="description" content="Group Chan Tin Wai-Tsang kin yat Cheung-Ka Man Lam Ying Tung">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/ci_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>   
+    <title>戲院</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="popup">
+        <div class="p-container">
+            <div class="row"> 
+                <div>
+                    <button id="closeBtn" class="bi bi-x-square"></button>
+                </div>
+                
+                <div class="col text-center">
+                    <h3 class="font-weight-bold ml-4">英皇戲院（中環娛樂行）</h3>
+                    <p class=""><i class="bi bi-geo-alt mr-2"></i>香港中環皇后大道中30號娛樂行3樓</p>
+                    <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                    <div class="rate-container">
+                        <div class="post">
+                            <div class="text">感謝你的分享！</div>
+                            <div class="edit">EDIT</div>
+                        </div>
+                        <div class="star-widget">
+                            <input type="radio" name="rate" id="rate-5">
+                            <label for="rate-5" class="bi bi bi-star-fill"></label>
+                            <input type="radio" name="rate" id="rate-4">
+                            <label for="rate-4" class="bi bi bi-star-fill"></label>
+                            <input type="radio" name="rate" id="rate-3">
+                            <label for="rate-3" class="bi bi bi-star-fill"></label>
+                            <input type="radio" name="rate" id="rate-2">
+                            <label for="rate-2" class="bi bi bi-star-fill"></label>
+                            <input type="radio" name="rate" id="rate-1">
+                            <label for="rate-1" class="bi bi bi-star-fill"></label>
+                            <form action="#">
+                                <header></header>
+                                <div class="textarea">
+                                    <textarea  id="content" cols="30" placeholder="分享你的經歷..." ></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit">發送</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div> <!--End of cinemaName div-->
+    
+                <div class="col"> 
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9084259198703!2d114.15424091512592!3d22.281458449208863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064cf2b3785%3A0x704ed4aad9127917!2z5Lit55Kw55qH5ZCO5aSn6YGT5LitMzDomZ_lqJvmqILooYwz!5e0!3m2!1szh-TW!2shk!4v1655086921623!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2 class="text-light display-5">戲院</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a id="hk-tab" class="nav-link active" data-toggle="tab" href="#hk">香港島</a>
+            </li>
+            <li class="nav-item">
+                <a id="kl-tab" class="nav-link " data-toggle="tab" href="#kowloon">九龍</a>
+            </li>
+            <li class="nav-item">
+                <a id="nt-tab" class="nav-link " data-toggle="tab" href="#nt">新界</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!--------------------------HK cinema info tab content---------------------------------->
+            <div id="hk" class="container tab-pane active"><br>
+                <div class="hk-wrapper ">
+                    <!--cinema1-->
+                    <div class="cinema row justify-content-center" >
+                        <div class="cinemaIcon col-md-2 link">
+                            <img src="img/emp.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7 link">
+                            <h3 class="font-weight-bold">英皇戲院（中環娛樂行）</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港中環皇后大道中30號娛樂行3樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema1 div-->
+                    <!--cinema2-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/emp.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">英皇戲院（銅鑼灣時代廣場）</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>銅鑼灣勿地臣街1號時代廣場13樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema2 div-->
+                    <!--cinema3-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/grand3.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">皇室戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港銅鑼灣告士打道311號皇室堡4樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>21290148</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema3 div-->
+                    <!--cinema4-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/grand3.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">康怡戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港鰂魚涌康山道2號康怡廣場南座4樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25138028</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema4 div-->
+                    <!--cinema5-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 海怡戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>海怡半島商場東翼（海怡東商場）四樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>21807326</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema5 div-->
+                    <!--cinema6-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 數碼港戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港薄扶林數碼港道100號數碼港商場2樓103號鋪
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>22970778</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema6 div-->
+                    <!--cinema7-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/GSC-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">高先電影院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>堅尼地城吉席街二號</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>21511226</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema7 div-->
+                    <!--cinema8-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/moviemovie.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MOViE MOViE Pacific Place (金鐘)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港金鐘道88號太古廣場L1</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema8 div-->
+                    <!--cinema9-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/moviemovie.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MOViE MOViE Cityplaza (太古城)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港太古城道18號太古城中心1期5樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema9 div-->
+                    <!--cinema10-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/palace-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">PALACE ifc</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港中環金融街8號國際金融中心商場一樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23886268</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema10 div-->
+                    <!--cinema11-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/kw-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">嘉禾銀河廣場</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港筲箕灣望隆街2號銀河廣場2樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>28329099</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema11 div-->
+                    <!--cinema12-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cinemacity_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">Cinema City JP</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港銅鑼灣百德新街22-36號翡翠明珠廣場3樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23600910</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema12 div-->
+                    <!--cinema13-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cinemacity_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">Cinema City 柴灣</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港柴灣柴灣道333號永利中心地下至四樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23600910</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema13 div-->
+                    <!--cinema14-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/newport_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">總統戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>銅鑼灣謝斐道517號</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>28365581</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema14 div-->
+                </div>
+                <!--end of hk-wrapper div-->
+            </div>
+            <!--end of #hk container div-->
+
+            <!--------------------------kowloon cinema info tab content----------------------------->
+            <div id="kowloon" class="container tab-pane fade"><br>
+                <div class="kl-wrapper ">
+                    <!--cinema1-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/emp.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">英皇戲院（尖沙咀iSQUARE）</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>尖沙咀彌敦道63號國際廣場7樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema1 div-->
+                    <!--cinema2-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/k11-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">K11 Art House</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港尖沙咀梳士巴利道18號K11 MUSEA 4樓415號鋪</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>37034623</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema2 div-->
+                    <!--cinema3-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/grand3.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">Festival Grand Cinema</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍塘達之路80號又一城UG</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>22371992</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema3 div-->
+                    <!--cinema4-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 德福戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍九龍灣偉業街33號德福花園平台</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>27592248</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema4 div-->
+                    <!--cinema5-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 長沙灣戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍長沙灣道680號麗新商業中心G/F, G56及G58-59號舖</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>31532808</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema5 div-->
+                    <!--cinema6-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 淘大戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍灣牛頭角道77號淘大商場三期地下
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>28990029</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema6 div-->
+                    <!--cinema7-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/b+-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">B+ cinema MOKO (旺角東)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港九龍旺角太子道西193號MOKO新世紀廣場4樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema7 div-->
+                    <!--cinema8-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/b+-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">B+ cinema apm (觀塘)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港九龍觀塘道418號創紀之城五期apm 6樓 L6-1舖</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema8 div-->
+                    <!--cinema9-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/broadway-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">百老匯電影中心</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍油麻地眾坊街3號駿發花園</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema9 div-->
+                    <!--cinema10-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/broadway-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">百老匯戲院 - 旺角</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍西洋菜街6-12號</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema10 div-->
+                    <!--cinema11-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/broadway-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">PREMIERE ELEMENTS</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍尖沙咀柯士甸道西1號圓方商場2樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema11 div-->
+                    <!--cinema12-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/thesky-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">Pthe sky (奧海城)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>西九龍海庭道18號奧海城2期1樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23593166</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema12 div-->
+                    <!--cinema13-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/kw-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">嘉禾 Megabox</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>九龍灣宏照道38號企業廣場5期MegaBox 11樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>27163668</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema13 div-->
+                    <!--cinema14-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cinemacity_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">Cinema City 朗豪坊</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>旺角 亞皆老街8號朗豪坊8至11樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23600910</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema14 div-->
+                    <!--cinema15-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/newport_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">新寶戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>旺角豉油街60號
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23321939</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema15 div-->
+                    <!--cinema16-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cgv-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">CGV Cinemas D2 Place</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>荔枝角長順街15號 D2 Place TWO 10-11樓
+                            </p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>28634100</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema16 div-->
+                    <!--cinema17-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cea1_logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">寶石戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>紅磡寶其利街2號J</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23657116</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema17 div-->
+                </div>
+                <!--end of kl-wrapper div-->
+            </div>
+            <!--end of #kl container div-->
+
+            <!--------------------------NT cinema info tab content---------------------------------->
+            <div id="nt" class="container tab-pane fade"><br>
+                <div class="nt-wrapper ">
+                    <!--cinema1-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/emp.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">英皇戲院（將軍澳康城）</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>將軍澳康城路1號, The LOHAS康城4樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema1 div-->
+                    <!--cinema2-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/emp.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">英皇戲院（屯門新都商場）</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界屯門屯利街2號新都商場3樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema2 div-->
+                    <!--cinema3-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/emp.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">英皇戲院（馬鞍山新港城中心）</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界馬鞍山鞍祿街18號新港城中心2樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25222996</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema3 div-->
+                    <!--cinema4-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/movietown.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">Movie Town</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界沙田新城市廣場第1期L1、L2及L3樓層</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>21773896</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema4 div-->
+                    <!--cinema5-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/star_cinema_logo.png" class="float-right" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">STAR Cinema</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界將軍澳唐賢街9號PopCorn 1樓 (港鐵將軍澳站上蓋)</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>27069800</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema5 div-->
+                    <!--cinema6-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 新都城戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界將軍澳27號地段, 欣景路8號新都城二期地下</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>31945179</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema6 div-->
+                    <!--cinema7-->
+                    <div class="cinema row justify-content-center ">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL 粉嶺戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界粉嶺馬適路1號逸峯廣場G12號舖</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25790733</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema7 div-->
+                    <!--cinema8-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mcl.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MCL東薈城戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>香港大嶼山東涌達東路18-20號東薈城名店倉6樓</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>31651833</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema8 div-->
+                    <!--cinema9-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/broadway-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">百老匯戲院 - 葵芳</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界葵芳興芳路223號新都會廣場L1-L4</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema9 div-->
+                    <!--cinema10-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/broadway-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">百老匯戲院 - 荃灣</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界荃灣大壩街4-30號荃灣廣場L1-L3a</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema10 div-->
+                    <!--cinema11-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/mycinema-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">MY CINEMA YOHO MALL</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界元朗朗日路9號YOHO MALL I 1樓 1021舖</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23880002</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema11 div-->
+                    <!--cinema12-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/kw-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">嘉禾粉嶺</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界粉嶺粉嶺車站路18號名都商場8及9號舖</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23308010</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema12 div-->
+                    <!--cinema13-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/kw-logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">嘉禾大埔</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界大埔安邦路2號大埔超級城第一層600號鋪</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>25108122</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema13 div-->
+                    <!--cinema14-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/StagE-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">StagE</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界屯門市廣場1期3樓3201鋪</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>38420888</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema14 div-->
+                    <!--cinema15-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cinemacity_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">CANDY PARK BY CINEMA CITY (愉景新城)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>荃灣愉景新城第一層1036號舖</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23600910</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema15 div-->
+                    <!--cinema16-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/newport_logo.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">凱都戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>新界屯門鄉事會路136號</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>24594857</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema16 div-->
+                    <!--cinema17-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/cineart-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">影藝戲院(青衣城)</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>青衣城2期3樓326號</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>23122600</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema17 div-->
+                    <!--cinema18-->
+                    <div class="cinema row justify-content-center">
+                        <div class="cinemaIcon col-md-2">
+                            <img src="img/CCC-logo2.png" class="float-right logo" alt="logo">
+                        </div>
+                        <div class="cinemaName col-md-7">
+                            <h3 class="font-weight-bold">巴黎倫敦紐約米蘭戲院</h3>
+                            <p class=""><i class="bi bi-geo-alt mr-2"></i>屯門河傍街康麗花園地下</p>
+                            <p class=""><i class="bi bi-telephone mr-2"></i>24522123</p>
+                        </div>
+                        <div class="cinemaStar col-md-3">
+                            <button class="sbtn"><i class="bi bi bi-star-fill"></i></button>
+                        </div>
+                    </div>
+                    <!--end of cinema18 div-->
+                </div>
+                <!--end of nt-wrapper div-->
+            </div>
+            <!--end of #nt container div-->
+        </div>
+        <!--end of tab-content-->
+    </div>
+    <!--end of line 16 container div-->
+    <div id="footer"></div>
+    <script>
+        $.get("navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+
+        $.get("footer.html", function(data){
+             $("#footer").replaceWith(data);
+         });
+    </script>
+    <script src="cinema-info.js"></script>
+    
+</body>
+
+</html>

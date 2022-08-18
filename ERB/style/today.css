@@ -1,0 +1,88 @@
+@media (max-width: 991px) {
+    .flex, .bFlex{
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+}
+body{
+    background:#7e7e7e;
+    color:white;
+}
+.muted{
+    color:darkgray;
+}
+nav{
+    background-color: black;
+    font-size: 20px;
+}
+.bFlex{
+    display:flex;
+    margin:5%;
+}
+main{
+    background-color: black;
+    border:1px solid white;
+    flex:70%;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0px 0px 5px #686767;
+
+}
+aside{
+    background-color: black;
+    border:1px solid white;
+    flex:30%;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0px 0px 5px #686767;
+
+}
+.flex{
+    border-bottom:1px solid gray;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.text1{
+    padding:10px;
+    flex-basis: 500px;
+    flex-grow:1;
+}
+div img, figure img, iframe{
+    padding:10px;
+}
+.badge{
+    font-size: 10px;
+    background-color: orange;
+    margin-bottom:5px;
+}   
+#iia{
+    background-color: black;
+}
+.release_date{
+    color:orange;
+}
+/* hover effect */
+figure {
+margin: 0;
+position: relative;
+overflow: hidden;
+}
+
+figcaption {
+position: absolute;
+opacity: 0;
+background: rgba(0, 0, 0, 0.5);
+right: 0;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding:70px 20px;
+transition: all 300ms ease;
+}
+
+figure:hover figcaption {
+opacity: 1;
+}

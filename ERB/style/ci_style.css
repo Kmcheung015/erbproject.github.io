@@ -1,0 +1,250 @@
+body{
+    background-color: #7E7E7E;
+
+}
+.tab-content{
+    background: #fff;
+    margin-bottom: 20px;
+    z-index:-1;
+}
+
+.active{
+    background-color: #fff !important ;
+}
+
+li a{
+    color:#fff;
+}
+li a:hover{
+    color:yellow;
+    font-weight: bold;
+}
+
+
+img .logo{
+    width: 100px;
+    height: 100px ;
+}
+
+.sbtn{
+    background: transparent;
+    border: none ;
+    outline: none;
+    color: lightgray;
+    font-size: 36px;
+    margin: 25px 30px;
+    float:right;
+    cursor: pointer;
+}
+
+.sbtn.active {
+    color: #fe7;
+    transition: all 0.2s ease;
+}
+
+.sbtn i:hover{
+    cursor: pointer;
+}
+
+.cinema{
+    padding: 20px;
+}
+.cinema:hover{
+    background: rgba(230, 229, 229, 0.5);
+}
+
+.cinemaIcon ,
+.cinemaName {
+    cursor: pointer;
+}
+
+.popup {
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    transform: translate(-50%, -40%);
+    left: 50%;
+    top: 40%;
+    z-index: 1;
+}
+
+.p-container {
+    display: none;
+    width: 1200px;
+    justify-content: center;
+    padding: 60px 40px;
+    background-color: #fff;
+    border: 20px solid #ffa700; ;
+} 
+
+.popup .show {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+#closeBtn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    outline: none;
+    color:#ce8500 ;
+    background: none;
+    font-size: 1.4rem;
+    margin: 8px;
+    cursor: pointer;
+}
+.rate-container {
+    position: relative;
+    width:400px;
+    background: #fff;
+    padding: 20px 30px;
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rate-container .post{
+    display: none;
+}
+
+.rate-container .text{
+    font: size 25px;
+    color: #666;
+    font-weight: 500;
+}
+
+.rate-container .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font: size 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.rate-container .edit:hover{
+    text-decoration: underline;
+}
+
+.rate-container .star-widget input{
+    display: none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: lightgray;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~label{
+    color: #fd4;
+}
+
+input:checked ~ label{
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked ~ form header:before{
+    content: "完全唔掂！😠";
+}
+
+#rate-2:checked ~ form header:before{
+    content: "一般般！😒";
+}
+
+#rate-3:checked ~ form header:before{
+    content: "都ok！😄";
+}
+
+#rate-4:checked ~ form header:before{
+    content: "幾好！😎";
+}
+
+#rate-5:checked ~ form header:before{
+    content: "好鬼正！😍";
+}
+
+.rate-container form{
+    display: none;
+}
+
+input:checked ~ form{
+    display: block;
+}
+
+form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-size: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+form .textarea{
+    height: 100px;
+    width:100%;
+    overflow: hidden;
+}
+
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid #444;
+    background: #333;
+    padding: 10px;
+    font-size: 16px;
+    resize:none;
+}
+
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #333;
+    color: #eee;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .btn button:hover{
+    background: #1b1b1b;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
